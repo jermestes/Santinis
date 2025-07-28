@@ -1,6 +1,6 @@
 <?php
     $menu = [
-        "Angelo's Special(s)" => [
+        "Angelo's Specials" => [
             'THE JERSEY GIRL: Grilled Corn, Fresh Jersey Blueberries, and Chicken Cutlet tossed in a Blueberry Vinaigrette Over Romaine Lettuce'
         ],
         'Starters N Wings' => [
