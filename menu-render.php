@@ -3,8 +3,8 @@ include 'menu-data.php';
 ?>
     <div class="menu-header">
         <div class="menu-header__top">
-        <h2>Our Menu</h>
-        <!-- Potential Search Button  -->
+            <h2 class="roboto-slab-font">Our Menu</h>
+            <!-- Potential Search Button  -->
         </div>
 
         <nav class="menu-header__bottom">

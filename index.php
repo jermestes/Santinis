@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <title>Santini's Grille</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header>
         <!-- Header Logo -->
         <div class="header-branding">
-            <img src="meatball-man_transparent.png" alt="Santini's 'Meatball Man' cartoon mascot" />
-            <h1><span class="bubble-text">Santini's</span> <span>Grille</span></h1>
+            <img src="santinis-grille_wordmark.svg" class="wordmark" alt="">
+            <img src="meatball-man_transparent.png" class="meatball-man" alt="Santini's 'Meatball Man' cartoon mascot" />
+            <h1>Santini's Grille</h1>
         </div>
 
         <!-- Mobile Button Container -->
         <div class="mobile-btn-container">
             <!-- Contact Info Button -->
-            <button class="mobile-btn">Contact Info</button>
+            <button class="mobile-btn" id="contact-info-btn">Contact Info</button>
 
             <!-- Call Now Button -->
             <a class="mobile-btn" href="tel:+1215-437-7236">Call to Order</a>
@@ -23,7 +30,8 @@
     </header>
 
     <!-- Contact Info -->
-    <address>
+    <address id="contact-blocks-container">
+        <button class="close_contact-info_btn">X</button>
         <!-- Phone -->
         <div class="contact-block">
             <img src="icons/phone.svg" alt="">
@@ -63,5 +71,10 @@
     <main>
         <?php include 'menu-render.php'; ?>
     </main>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Santini's Grille. All rights reserved.</p>
+        <p>Website by <a href="https://jermestes.github.io">Jeremy Estes</a>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
