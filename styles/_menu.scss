@@ -1,0 +1,46 @@
+@use 'base' as *;
+main {
+    h3 {
+        color: $dark_green;
+    }
+    .menu-header {
+        &__top {
+            background-color: black;
+            color: white;
+            text-align: center;
+            @media screen and (min-width: $mobile-to-tablet) {
+                padding: 0 $tablet-side-padding;
+                text-align: left;
+            }
+            h2 {
+                font-size: remcalc(28px);
+                margin: 0;
+                font-weight: 500;
+                @media screen and (min-width: $mobile-to-tablet) {
+                    font-size: remcalc(36px);
+                }
+            }
+        }
+        &__bottom {
+            .menu-categories {
+                display: flex;
+                justify-content: center;
+                flex-flow: row nowrap;
+                gap: 1rem;
+                &__category {
+                    white-space: nowrap;
+                    list-style: none;
+                }
+            }
+        }
+    }
+    .full-menu {
+        padding: 0 $mobile-side-padding;
+        @media screen and (min-width: $mobile-to-tablet) {
+            padding: 0 $tablet-side-padding;
+        }
+        @media screen and (min-width: $tablet-to-desktop) {
+            padding: 0 $tablet-side-padding;
+        }
+    }
+}

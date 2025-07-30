@@ -27,45 +27,45 @@
             <!-- Call Now Button -->
             <a class="mobile-btn" href="tel:+1215-437-7236">Call to Order</a>
         </div>
-    </header>
 
-    <!-- Contact Info -->
-    <address id="contact-blocks-container">
-        <button class="close_contact-info_btn">X</button>
-        <!-- Phone -->
-        <div class="contact-block">
-            <img src="icons/phone.svg" alt="">
-            <div class="contact-block__text">
-                <h3>Call to order</h3>
-                <a href="tel:+1215-437-7236">(215) 437-7236</a>
+        <!-- Contact Info -->
+        <address id="contact-blocks-container">
+            <button class="close_contact-info_btn">X</button>
+            <!-- Phone -->
+            <div class="contact-block">
+                <img src="icons/phone.svg" alt="">
+                <div class="contact-block__text">
+                    <h3>Call to order</h3>
+                    <a href="tel:+1215-437-7236">(215) 437-7236</a>
+                </div>
             </div>
-        </div>
-        <!-- Hours -->
-        <div class="contact-block">
-            <img src="icons/clock.svg" alt="">
-            <div class="contact-block__text">
-                <h3>Hours</h3>
-                <p>Wednesday-Saturday: <time datetime="Su 11:00-20:00">11am-8pm</time></p>
-                <p>Sunday: <time datetime="Su 11:00-19:00">11am-7pm</time></p>
+            <!-- Hours -->
+            <div class="contact-block">
+                <img src="icons/clock.svg" alt="">
+                <div class="contact-block__text">
+                    <h3>Hours</h3>
+                    <p>Wednesday-Saturday: <time datetime="Su 11:00-20:00">11am-8pm</time></p>
+                    <p>Sunday: <time datetime="Su 11:00-19:00">11am-7pm</time></p>
+                </div>
             </div>
-        </div>
-        <!-- Location -->
-        <div class="contact-block">
-            <img src="icons/map-pin.svg" alt="">
-            <div class="contact-block__text">
-                <h3>Location</h3>
-                <p>3294 Red Lion Rd, Philadelphia, PA 19114</p>
+            <!-- Location -->
+            <div class="contact-block">
+                <img src="icons/map-pin.svg" alt="">
+                <div class="contact-block__text">
+                    <h3>Location</h3>
+                    <p>3294 Red Lion Rd, Philadelphia, PA 19114</p>
+                </div>
             </div>
-        </div>
-        <!-- Instagram -->
-         <div class="contact-block">
-            <img src="icons/instagram.svg" alt="">
-            <div class="contact-block__text">
-                <h3>Follow us on Instagram</h3>
-                <a href="https://www.instagram.com/santinis_grille/" target="_blank" rel="noopener noreferrer">@santinis_grille</a>
-            </div>
-        </div>   
-    </address>
+            <!-- Instagram -->
+            <div class="contact-block">
+                <img src="icons/instagram.svg" alt="">
+                <div class="contact-block__text">
+                    <h3>Follow us on Instagram</h3>
+                    <a href="https://www.instagram.com/santinis_grille/" target="_blank" rel="noopener noreferrer">@santinis_grille</a>
+                </div>
+            </div>   
+        </address>
+    </header>
 
     <!-- Food Menu -->
     <main>

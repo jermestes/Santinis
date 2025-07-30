@@ -18,8 +18,9 @@ include 'menu-data.php';
         </nav>
     </div>
 
+    <div class="full-menu">
     <?php foreach ($menu as $category => $items): ?>
-        <h3><?php echo $category; ?></h3>
+        <h3 class="roboto-slab-font"><?php echo $category; ?></h3>
         <?php if (is_array($items)): ?>
             <ul>
                 <?php foreach ($items as $item => $details): ?>
@@ -40,3 +41,4 @@ include 'menu-data.php';
             <p><?php echo $items; ?></p>
         <?php endif; ?>
     <?php endforeach; ?>
+    </div>

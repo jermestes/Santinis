@@ -1,0 +1,83 @@
+@use 'base' as *;
+header {
+    @media screen and (min-width: $mobile-to-tablet) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $tablet-side-padding;
+        align-items: center;
+        gap: remcalc(88px);
+    }
+    @media screen and (min-width: $tablet-to-desktop) {
+        flex-flow: column;
+        justify-content: flex-start;
+        gap: remcalc(40px);
+    }
+    .header-branding {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: remcalc(8px);
+        .wordmark {
+            width: remcalc(197px);
+            grid-row: 1;
+            grid-column: 1;
+            z-index: 2;
+            @media screen and (min-width: $mobile-to-tablet) {
+                width: remcalc(282px);
+            }
+            @media screen and (min-width: $tablet-to-desktop) {
+                width: remcalc(388px);
+            }
+        }
+        .meatball-man {
+            width: remcalc(82px);
+            grid-row: 1;
+            grid-column: 1;
+            position: relative;
+            top: remcalc(43px);
+            @media screen and (min-width: $mobile-to-tablet) {
+                width: remcalc(124px);
+                top: remcalc(61px);
+            }
+            @media screen and (min-width: $tablet-to-desktop) {
+                width: remcalc(165px);
+                top: remcalc(84px);
+            }
+        }
+        h1 {
+            color: transparent;
+            margin: 0;
+        }
+    }
+    .mobile-btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: .75rem;
+        @media screen and (min-width: $mobile-to-tablet) {
+            flex-flow: row wrap;
+            gap: remcalc(20px);
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: $tablet-to-desktop) {
+            display: none;
+        }
+        .mobile-btn {
+            font-weight: bold;
+            background-color: $dark_green;
+            color: white;
+            border: remcalc(1px) solid black;
+            font-size: remcalc(16px);
+            padding: remcalc(9px) remcalc(16px);
+            border-radius: remcalc(10px);
+            text-decoration: none;
+            &:hover {
+                cursor: pointer;
+            }
+            @media screen and (min-width: $mobile-to-tablet) {
+                font-size: remcalc(20px);
+                padding: 1rem 2rem;
+            }
+        }
+    }
+}
