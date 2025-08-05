@@ -1,15 +1,24 @@
 @use 'base' as *;
 main {
+    @media screen and (min-width: $tablet-to-desktop) {
+        border-left: $dark_grey 2px solid;
+    }
     h3 {
         color: $dark_green;
+        font-size: remcalc(20px);
+        margin-bottom: 0;
+        @media screen and (min-width: $mobile-to-tablet) {
+            font-size: 1.5rem;
+        }
     }
     .menu-header {
         &__top {
-            background-color: black;
+            background-color: $dark_green;
             color: white;
             text-align: center;
+            padding: 0.5rem 0;
             @media screen and (min-width: $mobile-to-tablet) {
-                padding: 0 $tablet-side-padding;
+                padding: 0.5rem $tablet-side-padding;
                 text-align: left;
             }
             h2 {
@@ -41,6 +50,34 @@ main {
         }
         @media screen and (min-width: $tablet-to-desktop) {
             padding: 0 $tablet-side-padding;
+        }
+        ol:not(.menu-subheader) {
+            padding: 0 1rem;
+            @media screen and (min-width: $mobile-to-tablet) {
+                padding: 0 $tablet-side-padding;
+            }
+        }
+        > ol:has(.menu-subheader) {
+            padding: 0;
+        }
+        .menu-subheader {
+            list-style: none;
+            font-size: remcalc(18px);
+            font-style: italic;
+            margin: .5rem 0;
+            @media screen and (min-width: $mobile-to-tablet) {
+                font-size: 1.25rem;
+            }
+            ol {
+                margin: .5rem 0;
+                li {
+                    font-size: remcalc(14px);
+                    @media screen and (min-width: $mobile-to-tablet) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            
         }
     }
 }

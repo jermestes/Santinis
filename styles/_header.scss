@@ -64,7 +64,7 @@ header {
         }
         .mobile-btn {
             font-weight: bold;
-            background-color: $dark_green;
+            background-color: black;
             color: white;
             border: remcalc(1px) solid black;
             font-size: remcalc(16px);
@@ -73,6 +73,7 @@ header {
             text-decoration: none;
             &:hover {
                 cursor: pointer;
+                background-color: $dark_green;
             }
             @media screen and (min-width: $mobile-to-tablet) {
                 font-size: remcalc(20px);

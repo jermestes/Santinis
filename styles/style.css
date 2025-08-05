@@ -427,7 +427,7 @@ header .mobile-btn-container {
 }
 header .mobile-btn-container .mobile-btn {
   font-weight: bold;
-  background-color: #0F6400;
+  background-color: black;
   color: white;
   border: 0.0625rem solid black;
   font-size: 1rem;
@@ -437,6 +437,7 @@ header .mobile-btn-container .mobile-btn {
 }
 header .mobile-btn-container .mobile-btn:hover {
   cursor: pointer;
+  background-color: #0F6400;
 }
 @media screen and (min-width: 48rem) {
   header .mobile-btn-container .mobile-btn {
@@ -474,18 +475,44 @@ address .contact-block {
 address .contact-block__text {
   margin-top: 0;
 }
-
-main h3 {
+address .contact-block__text h3 {
+  margin: 0;
   color: #0F6400;
 }
+address .contact-block__text a {
+  color: black;
+}
+address .contact-block__text a:hover {
+  color: #0F6400;
+}
+address .contact-block__text p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 75rem) {
+  main {
+    border-left: #586255 2px solid;
+  }
+}
+main h3 {
+  color: #0F6400;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 48rem) {
+  main h3 {
+    font-size: 1.5rem;
+  }
+}
 main .menu-header__top {
-  background-color: black;
+  background-color: #0F6400;
   color: white;
   text-align: center;
+  padding: 0.5rem 0;
 }
 @media screen and (min-width: 48rem) {
   main .menu-header__top {
-    padding: 0 3.75rem;
+    padding: 0.5rem 3.75rem;
     text-align: left;
   }
 }
@@ -520,5 +547,38 @@ main .full-menu {
 @media screen and (min-width: 75rem) {
   main .full-menu {
     padding: 0 3.75rem;
+  }
+}
+main .full-menu ol:not(.menu-subheader) {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 48rem) {
+  main .full-menu ol:not(.menu-subheader) {
+    padding: 0 3.75rem;
+  }
+}
+main .full-menu > ol:has(.menu-subheader) {
+  padding: 0;
+}
+main .full-menu .menu-subheader {
+  list-style: none;
+  font-size: 1.125rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+@media screen and (min-width: 48rem) {
+  main .full-menu .menu-subheader {
+    font-size: 1.25rem;
+  }
+}
+main .full-menu .menu-subheader ol {
+  margin: 0.5rem 0;
+}
+main .full-menu .menu-subheader ol li {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 48rem) {
+  main .full-menu .menu-subheader ol li {
+    font-size: 1rem;
   }
 }

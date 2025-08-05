@@ -23,6 +23,19 @@ address {
         align-items: center;
         &__text {
             margin-top: 0;
+            h3 {
+                margin: 0;
+                color: $dark_green;
+            }
+            a {
+                color: black;
+                &:hover {
+                    color: $dark_green;
+                }
+            }
+            p {
+                margin-top: 0;
+            }
         }
     }
 }

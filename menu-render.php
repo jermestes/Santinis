@@ -22,21 +22,21 @@ include 'menu-data.php';
     <?php foreach ($menu as $category => $items): ?>
         <h3 class="roboto-slab-font"><?php echo $category; ?></h3>
         <?php if (is_array($items)): ?>
-            <ul>
+            <ol>
                 <?php foreach ($items as $item => $details): ?>
                     <?php if (is_array($details)): ?>
-                        <li><?php echo $item; ?>
-                            <ul>
+                        <li class="menu-subheader"><?php echo $item; ?>
+                            <ol>
                                 <?php foreach ($details as $detail): ?>
                                     <li><?php echo $detail; ?></li>
                                 <?php endforeach; ?>
-                            </ul>
+                            </ol>
                         </li>
                     <?php else: ?>
                         <li><?php echo $details; ?></li>
                     <?php endif; ?>
                 <?php endforeach; ?>
-            </ul>
+            </ol>
         <?php else: ?>
             <p><?php echo $items; ?></p>
         <?php endif; ?>

@@ -20,7 +20,9 @@
                 '<b>Eggplant Stack</b> w/ Eggplant, Burrata Cheese, Mario\'s Tomato Salad Topped w/ Balsamic Glaze - $12',
                 '<b>Individual Meatballs</b> - $3.50'
             ],
-            'wings' => '<b>10 Bone-in or Boneless</b> - $14<br><span class="italic">Sauces: </span>Signature Buffalo Sauce, Sweet-n-Sexy (hot, honey, garlic, bbq), Barbeque, Garlic Parm, Dry Rub, Buffalo Garlic Parm'
+            'Wings' => [
+                '<b>10 Bone-in or Boneless</b> - $14<br><span class="italic">Sauces: </span>Signature Buffalo Sauce, Sweet-n-Sexy (hot, honey, garlic, bbq), Barbeque, Garlic Parm, Dry Rub, Buffalo Garlic Parm'
+            ]
         ],
         'Sandwiches' => [
             'Meatball - $16' => [
