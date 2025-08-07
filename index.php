@@ -30,7 +30,7 @@
 
         <!-- Contact Info -->
         <address id="contact-blocks-container">
-            <button class="close_contact-info_btn">X</button>
+            <button id="close_contact-info_btn">X</button>
             <!-- Phone -->
             <div class="contact-block">
                 <img src="icons/phone.svg" alt="">
